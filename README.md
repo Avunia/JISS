@@ -34,12 +34,10 @@ div.background.imageNNN
 
 ## CONFIGURATION ##
 JISS currently has the following variables to be configured:
-variable | info
--- | --
-picturecount | Amount of images in the folder
-size | Pad size (amount of digits, "3" = "000")
-picturepath | Path to the images (from documentroot)
-extension | File extension of the images
+* picturecount - Amount of images in the folder
+* size - Pad size (amount of digits, "3" = "000")
+* picturepath - Path to the images (from documentroot)
+* extension - File extension of the images
 
 ## UPDATES
 ### v1.00 / 18.10.2016 ###
