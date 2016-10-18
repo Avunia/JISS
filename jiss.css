@@ -1,0 +1,22 @@
+/*!
+    JISS - Javascript Image Slideshow Script | v1.0 | 18.10.2016
+    (https://github.com/windyrain0212/jiss)
+    (c) Alexander Meinhardt / @windyrain0212 / http://home.nssdev.net 
+*/
+.background {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;height: 100%;
+    overflow: hidden;
+    z-index: -100;
+}
+.background.container {background: #fff;}
+.background.container > div[class*="image"] {
+    top: 0;left: 0;
+    width: 100%;height: 100%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    opacity: 0.0;
+    z-index: -100;
+}
