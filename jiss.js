@@ -1,7 +1,7 @@
-﻿/*
+/*
     JISS - Javascript Image Slideshow Script | v1.0 | 18.10.2016
     (https://github.com/windyrain0212/jiss)
-    (c) Alexander Meinhardt / @windyrain0212 / http://home.nssdev.net 
+    (c) Alexander Meinhardt / @windyrain0212 / http://home.nssdev.net
 */
 
 var picturecount = 22;
@@ -10,7 +10,7 @@ var picturepath = './content/img/screenshots/';
 var extension = 'jpg';
 
 var nextpicture = null;    
-var pictures = new Array();
+var pictures = [];
 
 $(function() {
     for (i=0;i<picturecount;i++) {
@@ -34,7 +34,7 @@ function createBackgrounds(num) {
 
 function changeBackground() {
     // Just so it doesn't error on page load.
-    if(nextpicture != null) {
+    if(nextpicture !== null) {
         // Hide current picture
         $('.background.image'+pad(nextpicture, size)).animate({
         opacity: 0.0
