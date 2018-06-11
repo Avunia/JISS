@@ -1,36 +1,37 @@
 # JISS
 ### a **J**avascript **I**mage **S**lideshow **S**cript..
 ..which makes it easy to include animated and powerful slideshows in your website, without modifying existing code!
+And the best?
+
+**No ~~useless~~ unused features.**
+
+This is as naked as you'll wanna get!
 
 ## DEMO ##
 (coming soon)
 
 ## INSTALL ##
 ### Dependencies
-* jQuery (tested only in v1.11.1)
+* None
 
 ### Usage
 Download it and include the **JS** & **CSS** file inside your page(s) with the script & link tag.<br/>
 e.g.
 ```html
-<link type="text/css" rel="stylesheet" href="./css/jiss.css" />
-<script src="./js/jiss.min.js"></script>
+<link href="./styles/jiss.min.css" rel="stylesheet"/>
+<script src="./scripts/jiss.min.js"></script>
 ```
-Keep in mind the **JS** file must be included **BELOW** the jQuery script.<br/>
-
 Afterwards, add the following tag in your page(s):
 ```html
-<div class="background container"></div>
+<div class="jissBackground container"></div>
 ```
 
 The generated image tags are selectable with the following selector(s):
 ```css
-div.background.container > div[class*="image"]
-div.background.imageNNN
+div.jissBackground.container > div[class*="image"]
+div.jissBackground.imageNNN
 /* Replace NNN with any number starting from 000 */
 ```
-
-(Bower / NPM support / CDN *may* come in the future)
 
 ## CONFIGURATION ##
 JISS currently has the following variables to be configured:
@@ -40,8 +41,12 @@ JISS currently has the following variables to be configured:
 * extension - File extension of the images
 
 ## UPDATES
-### v1.00 / 18.10.2016 ###
+*Version / Release Date / Codename*
+### v1.0.0 / 18.10.2016 ###
 * Initial release - more to come soon! 
+### v1.1.0 / 11.06.2018 / "Free" ###
+* JQuery dependency removed
+* Animations moved from JS to CSS
 
 ## LICENSE
-Copyright (c) 2016 Alexander Meinhardt / [WindyRain0212](http://home.nssdev.net). Licensed under the [MIT License (MIT)](https://opensource.org/licenses/MIT)
+Copyright (c) 2016-2018 Alexander Meinhardt / [Avunia](http://avunia.gitlab.io). Licensed under the [MIT License (MIT)](https://opensource.org/licenses/MIT)
