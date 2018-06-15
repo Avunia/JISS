@@ -39,7 +39,6 @@ function pad(num, size) {
 function createBackgrounds(num) {
   pictures[num] = new Image();
   pictures[num] = picturepath + num + '.' + extension;
-  //$('.background.container').append('<div class="background image'+num+'" style="background-image: url(\''+pictures[num]+'\'); opacity: 0;"></div>');
   Array.prototype.forEach.call(document.getElementsByClassName('jissBackground container'), function (entry) {
     var ele = document.createElement('div');
     ele.setAttribute('class', 'jissBackground image' + num);
@@ -52,11 +51,6 @@ function changeBackground() {
   // Just so it doesn't error on page load.
   if (nextpicture !== null) {
     // Hide current picture
-    /*
-    $('.background.image'+pad(nextpicture, size)).animate({
-      opacity: 0.0
-    }, 750);
-    */
     Array.prototype.forEach.call(document.getElementsByClassName('jissBackground image' + pad(nextpicture, size)), function (entry) {
       entry.className = entry.className.replace(/(?:^|\s)jissShown(?!\S)/g, '');
     });
@@ -74,11 +68,6 @@ function changeBackground() {
     }
   }
   // Show new picture
-  /*
-  $('.background.image'+pad(nextpicture, size)).animate({
-    opacity: 1.0
-  }, 750);
-  */
   Array.prototype.forEach.call(document.getElementsByClassName('jissBackground image' + pad(nextpicture, size)), function (entry) {
     entry.className += ' jissShown';
   });
